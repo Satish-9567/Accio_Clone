@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;  
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: white;
+}
+.nav-row1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 30px  0px 60px!important;
+    box-sizing: border-box;
+    height: auto;
+    flex-wrap: wrap;
+}
+.logo{
+    flex: 1;
+}
+.nav-menu{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-menu li{
+    list-style: none;
+}
+li>select{
+    border: none;
+    font-size: 15px;
+}
+.login{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #2F80ED;
+    color:white;
+    background-color:#2F80ED;
+    transition: background-color 0.5s ease ;
+}
+.login:hover{
+    color:#2F80ED;
+    background-color:white;
+    box-shadow: 0px 0px 2px #2F80ED;
+}
+.nav-row2{
+    background-color: #2F80ED;
+    text-align: center;
+    color: white;
+    padding: 5px 0px;
+    width: 100vw;
+}
+
+/* ---------------------------------------header-------------------------------------------*/
+.container{
+    padding: 10px 100px;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    margin-bottom: 80px;
+    padding: 20px 100px 20px 100px;
+    flex-wrap: wrap;
+}
+.header-col1{
+    flex:4;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+}
+.text-half{
+    margin: 20px 0px 35px 0;
+}
+.header-heading{
+    font-size: 40px;
+}
+.span1{
+    font-style: italic;
+    color:#417dce;
+    text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
+               1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+.text-half p{
+    margin: 20px 0 0 0 ;
+    font-size: 20px;
+    color: #595959;
+}
+
+.info-half{
+    display: flex;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.info-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.info-card p span{
+    font-size: 10px;
+}
+#copyright{
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px gray;
+    text-align: center;
+    margin: 60px 0px;
+}
+.header-col2{
+    flex:2;
+    height: 415px;
+    width: 415px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 20px 50px 50px 30px rgba(82, 4, 93, 0.12);
+
+}
+#col2-heading{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#col2-content{
+    font-size: 15px;
+    color:#727783;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+form{
+    width: 100%;
+    font-size:30px
+}
+.form-div{
+    background-color: #fafafa;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 17px 0px 17px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: start;
+    
+}
+input{
+    border: none;
+    font-size:20px;
+    background-color: transparent;
+    outline: none;
+    width: 50%;
+}
+.form-div i{
+    margin-right: 10px;
+}
+#apply{
+    margin-top: 20px;
+    border: 1px solid #fbfbfb;
+    padding: 15px !important;
+    width: 100%;
+    border-radius: 9px;
+    color: #fff;
+    background: var(--New, linear-gradient(277deg, #992fed 0%, #2f80ed 100%));
+}
+#apply:hover{
+    color:#2F80ED;
+    box-shadow: 0px 0px 2px #2F80ED;
+    border: 2px solid #fbfbfb;
+    background: none;
+    background-color: white !important;
+
+}
+.T-C{
+    margin-top: 15px;
+    text-align: center;
+}
+.T-C a{
+    line-height: 1.5;
+    text-decoration: none;
+    color: #2f80ed;
+}
+
+/* --------------------------------------Courses -----------------------------------------*/
+.courses{
+    box-sizing: border-box;
+    padding: 50px 80px;
+    background-color: #eff8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-heading{
+    font-size: 20px;
+    font-style: italic;
+    color: #992FED;
+    margin-bottom: 5px;
+}
+.course-sub-heading{
+    font-size: 36px;
+    color: #2F80ED;
+    margin-bottom: 35px;
+}
+.offered-courses{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#c-card{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #2F80ED;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    flex-direction: column;
+    height: 450px;
+}
+#c-row1{
+    font-size:25px;
+    font-style: italic;
+}
+#diff-clr p{
+    background-color: #FFEED8 !important;
+    color: #965400 !important;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 12px;
+    padding: 5px 13px;
+    border-radius: 5px; 
+}
+#c-row2 p{
+    font-size: 14px;
+    background-color: #E0F3FF;
+    color: #1D78B0;
+    display: inline-block;
+    margin-right: 12px;
+    padding: 5px 13px;
+    border-radius: 5px;
+}
+#c-row3{
+    color: #565656;
+    font-size: 14px;
+}
+td{
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 10px;
+}
+td>i{
+    margin-right: 10px;
+}
+#c-row5 .login{
+    padding-left: 45px;
+    padding-right: 45px;
+}
+#c-row5 i{
+    margin-right: 10px;
+}
+#c-card i{
+    margin-right: 10px;
+}
+/*-------------------------------------HIRING PARTNER------------------------------------------*/
+.hiring-partner{
+    box-sizing: border-box;
+    padding: 70px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#h-row1{
+    color:#992FED;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-style: italic;
+}
+#h-row2{
+    color:black;
+    margin-bottom: 2px;
+    font-size: 42px;
+}
+#h-row3{
+    color:#2f80ed;
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+#h-row4{
+    margin-bottom: 20px;
+}
+.container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 15px;  
+    /* default is ltr right goes first -----> */
+  }
+  .container1 {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    direction: rtl; /* directio rtr right goes first -----> */
+    margin-bottom: 15px;
+  }
+  .image-container {
+    display: flex;
+    gap:10px;
+    animation: scrollImages 25s linear infinite; /* Adjust duration as needed */
+  }
+  .image-container-reverse {
+    display: flex;
+    gap:10px;
+    animation: scrollImagess 25s linear infinite; /* Adjust duration as needed */
+  }
+  .image {
+    width: 100px; /* Set the width of each image */
+    height: 100px; /* Set the height of each image */
+    margin-right: 10px; /* Adjust spacing between images */
+  }
+  @keyframes scrollImagess {
+    0% { transform: translateX(100); }
+    100% { transform: translateX(+100%); } /*to achieve left to right*/
+  }
+  @keyframes scrollImages {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  .hiring-partner .login{
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+/*----------------------------------------ALUMINI----------------------------------------*/
+.alumini{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+.alumini-container{
+    display: grid;
+    grid-template-areas: "a a a a b b b b c c c c"
+                         "a a a a b b b b c c c c"
+                         "a a a a b b b b c c c c"
+                         "d d d d b b b b c c c c"
+                         "d d d d b b b b f f f f"
+                         "d d d d e e e e f f f f"
+                         "d d d d e e e e f f f f";
+    gap: 20px;
+    padding: 40px 0px;
+}
+.a-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 10px;
+    padding: 10px 30px
+}
+#a-heading{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+#a-sub-heading{
+    color: #595959;
+    font-size:18px;
+    margin-bottom: 10px;
+}
+.a-card-row1{
+    display: flex;
+    align-items: center;
+    gap:15px
+}
+.name-of-student p{
+    color: #595959;
+    margin-top: 5px;
+}
+.a-card-row2{
+    font-size: 16px;
+}
+.a-card-row3{
+    margin-top: 10px;
+    font-size: 12px;
+    color:#595959
+}
+#a{
+    grid-area: a;
+}
+#b{
+    grid-area: b;
+}
+#c{
+    grid-area: c;
+}
+#d{
+    grid-area: d;
+}
+#e{
+    grid-area: e;
+}
+#f{
+    grid-area: f;
+}
+/* ---------------------------------------------MEDIA QUERIES ----------------------------------------*/
+@media screen and (max-width:990px) {
+    .offered-courses{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-row1{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .alumini-container{
+        grid-template-areas: "a a a a b b b b"
+                            "a a a a b b b b"
+                            "a a a a b b b b"
+                            "d d d d b b b b"
+                            "d d d d b b b b"
+                            "d d d d e e e e"
+                            "d d d d e e e e"
+                            "c c c c f f f f"
+                            "c c c c f f f f"
+                            "c c c c f f f f"
+                            "c c c c f f f f";
+    }
+  }
+  @media screen and (max-width:650px) {
+    .header-heading{
+        font-size: 30px;
+    }
+    .header{
+        padding: 20px 50px;
+    }
+    #c-card{
+        width: 80vw;
+    }
+    .alumini-container{
+        grid-template-areas: "a a a a"
+                             "a a a a"
+                             "a a a a"
+                             "b b b b"
+                             "b b b b"
+                             "b b b b"
+                             "b b b b"
+                             "b b b b"
+                             "d d d d"
+                             "d d d d"
+                             "d d d d"
+                             "d d d d"
+                             "e e e e"
+                             "e e e e"
+                             "c c c c"
+                             "c c c c"
+                             "c c c c"
+                             "f f f f"
+                             "f f f f"
+                             "f f f f"
+                             
+                             
+    }
+  }
+  @media screen and (max-width:550px)
+  {
+    .header{
+        padding: 0px 25px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        gap:10px
+    }
+    .header-heading{
+        font-size: 25px;
+    }
+    .text-half p{
+        font-size: 17px;
+    }
+    #c-card{
+        height: 520px;
+    }
+    #c-row5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #c-row5 .login{
+        padding-left: 130px;
+        padding-right: 120px;
+    }
+    #c-row2, #diff-clr{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hiring-partner{
+        text-align: center;
+    }
+  }
+  @media screen and (max-width:485px)
+  {
+    #c-card{
+        height: 550px;
+    }
+  }
